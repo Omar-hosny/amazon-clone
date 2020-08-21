@@ -30,8 +30,8 @@ const Product = ({ id, title, price, rating, image }) => {
           {/* This will create an array with size of rating and fill it with empty values and map throw it and then return star deprnd on rating */}
           {Array(rating)
             .fill()
-            .map((_) => (
-              <p>⭐</p>
+            .map((_, i) => (
+              <p key={i}>⭐</p>
             ))}
         </div>
       </div>
