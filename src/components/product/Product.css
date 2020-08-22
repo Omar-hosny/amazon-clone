@@ -36,3 +36,20 @@
   border: 1px solid;
   border-color: yellow;
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 720px) {
+  .product__info > p {
+    font-size: 12px;
+  }
+  .product > img {
+    max-height: 150px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+
+  .product__info {
+    margin-bottom: 20px;
+  }
+}
